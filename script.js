@@ -88,7 +88,7 @@ document.body.appendChild(keyboard);
 
 let description = document.createElement('p');
 description.style.cssText = 'font-size: 18px; left: -260px; position: relative';
-description.innerText = 'Смена языка: Alt + Ctrl';
+description.innerText = 'Смена языка: Alt + Ctrl. Система: Windows';
 document.body.appendChild(description);
 
 let buttonLines = []; // генерация  рядов клавиш
