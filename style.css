@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.keyboard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+textarea {
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.but-line-1, .but-line-2, .but-line-3, .but-line-4, .but-line-5 {
+    display: flex;
+}
+
+.but-line-1 .key:last-child {
+    width: 100px;
+    background-color: #56595e;
+}
+
+.but-line-2 .key:first-child,
+.but-line-2 .key:last-child {
+    width: 47px;
+    background-color: #56595e;
+}
+
+.but-line-3 .key:first-child  {
+    width: 100px;
+    background-color: #56595e;
+}
+
+.but-line-3 .key:last-child {
+    width: 86px;
+    background-color: #56595e;
+}
+
+.but-line-4 .key:first-child {
+    width: 100px;
+    background-color: #56595e;
+}
+
+.but-line-4 .key:nth-child(13),
+.but-line-4 .key:nth-child(14) {
+    background-color: #56595e;
+}
+
+.but-line-5 .key:first-child {
+    width: 60px;
+    background-color: #56595e;
+}
+
+.but-line-5 .key:nth-child(2),
+.but-line-5 .key:nth-child(3),
+.but-line-5 .key:nth-child(5),
+.but-line-5 .key:nth-child(7),
+.but-line-5 .key:nth-child(8),
+.but-line-5 .key:nth-child(9) {
+    background-color: #56595e;
+}
+
+.but-line-5 .key:nth-child(4) {
+    width: 290px;
+    background-color: #56595e;
+}
+
+.but-line-5 .key:nth-child(6) {
+    width: 60px;
+    background-color: #56595e;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #787c83;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 0px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+    transition: 0.3s;
+}
+
+.key:hover {
+    background-color: #88c200;
+}
