@@ -98,7 +98,6 @@ for (i = 1; i <= 5; i++) {
     keyboard.appendChild(buttonLines[i]);
 }
 
-
 let isShiftOn = false;
 let isCapsLock = false;
 
@@ -309,7 +308,6 @@ function type(EO) {
                     break;
               }
               text.focus();
-                
         }
     });
 }
@@ -338,7 +336,6 @@ function clickMouse(EO) {
     event.code = EO.target.id;
     clickTarget = EO.target.id;
     document.dispatchEvent(event);
-    
 }
 
 function dropMouse(EO) {
