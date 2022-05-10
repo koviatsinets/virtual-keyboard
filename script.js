@@ -87,9 +87,15 @@ keyboard.setAttribute('class', 'keyboard');
 document.body.appendChild(keyboard);
 
 const description = document.createElement('p');
-description.style.cssText = 'font-size: 18px; left: -260px; position: relative';
+description.style.cssText = 'font-size: 18px';
 description.innerText = 'Смена языка: Alt + Ctrl. Система: Windows';
 document.body.appendChild(description);
+
+const linkPR = document.createElement('a');
+linkPR.setAttribute('href', 'https://github.com/koviatsinets/virtual-keyboard/pull/3')
+linkPR.style.cssText = 'font-size: 18px; margin-bottom: 20px';
+linkPR.innerText = 'Ссылка на Pull Request';
+document.body.prepend(linkPR);
 
 const buttonLines = []; // генерация  рядов клавиш
 for (let i = 1; i <= 5; i += 1) {
